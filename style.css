@@ -1,0 +1,125 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: black;
+  background-size: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+}
+
+#clock {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  position: relative;
+  outline-style: solid;
+}
+#clock .time {
+  letter-spacing: 0.05em;
+  font-size: 100px;
+  padding: 5px 0;
+  color: rgb(2, 241, 2);
+}
+#clock .date {
+  letter-spacing: 0.1em;
+  font-size: 80px;
+  color: red;
+}
+#clock .week {
+  letter-spacing: 0.1em;
+  font-size: 80px;
+  color: rgb(235, 215, 38);
+}
+#clock .text {
+  letter-spacing: 0.1em;
+  text-decoration: underline overline;
+  font-size: 30px;
+  padding: 20px 0 0;
+  color: white;
+}
+
+.bar0,
+.bar1,
+.bar2,
+.bar3,
+.bar4,
+.bar5,
+.bar6,
+.bar7,
+.bar8,
+.bar9,
+.bar10 {
+  display: inline-block;
+  background-color: #5f0;
+  padding: 3px 10px;
+  opacity: 0.5;
+}
+
+.bar0 {
+  -webkit-animation: armsAnimation 1s alternate 0s infinite;
+}
+
+.bar1 {
+  -webkit-animation: armsAnimation 1s alternate 0.1s infinite;
+}
+
+.bar2 {
+  -webkit-animation: armsAnimation 1s alternate 0.2s infinite;
+}
+
+.bar3 {
+  -webkit-animation: armsAnimation 1s alternate 0.3s infinite;
+}
+
+.bar4 {
+  -webkit-animation: armsAnimation 1s alternate 0.4s infinite;
+}
+
+.bar5 {
+  -webkit-animation: armsAnimation 1s alternate 0.5s infinite;
+}
+
+.bar6 {
+  -webkit-animation: armsAnimation 1s alternate 0.6s infinite;
+}
+
+.bar7 {
+  -webkit-animation: armsAnimation 1s alternate 0.7s infinite;
+}
+
+.bar8 {
+  -webkit-animation: armsAnimation 1s alternate 0.8s infinite;
+}
+
+.bar9 {
+  -webkit-animation: armsAnimation 1s alternate 0.9s infinite;
+}
+
+.bar10 {
+  -webkit-animation: armsAnimation 1s alternate 1s infinite;
+}
+
+@-webkit-keyframes armsAnimation {
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    background-color: #5f0;
+    padding: 3px 10px;
+  }
+  100% {
+    opacity: 1;
+    background-color: crimson;
+    padding: 3px 10px;
+  }
+}
